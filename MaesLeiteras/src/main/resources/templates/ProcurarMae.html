@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Idade</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Itera sobre a lista 'pessoas' -->
+    <tr th:each="pessoa : ${pessoas}">
+        <td><span th:text="${pessoa.nome}"></span></td>
+        <td><span th:text="${pessoa.sobreNome}"></span></td>
+        <td><span th:text="${pessoa.idade}"></span></td>
+        <td><span th:text="${pessoa.endereco}"></span></td>
+        <td><span th:text="${pessoa.telefone}"></span></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
